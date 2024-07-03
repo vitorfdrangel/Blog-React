@@ -26,17 +26,20 @@ const Home = () => {
   useEffect(() => {
     getPosts();
   }, []);
+
   return (
-    <div>
+    <div className="home">
       <h1>Últimos Posts</h1>
       {posts.length === 0 ? (
         <p>Carregando...</p>
       ) : (
         posts.map((post) => (
-          <div className="post-container" key={post.id}>
+          <div className="post" key={post.id}>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
-            <Link to={`/posts/${post.id}`}>Ler mais</Link>
+            <Link to={`/posts/${post.id}`} className="btn">
+              Ler mais
+            </Link>
           </div>
         ))
       )}
