@@ -1,0 +1,12 @@
+.post-container .post {
+  border-bottom: none;
+}
+
+.post-container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.post-container p {
+  font-size: 1.2rem;
+}

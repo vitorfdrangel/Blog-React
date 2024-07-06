@@ -14,6 +14,8 @@ const NewPost = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!title || !body) return;
+
     const post = { title, body, id: 1 };
 
     BlogFetch.post("/posts", {
