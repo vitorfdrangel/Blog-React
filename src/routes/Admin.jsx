@@ -6,7 +6,7 @@ import BlogFetch from "../axios/config";
 import "./Admin.css";
 
 const Admin = () => {
-  const [posts, setPosts] = useState({});
+  const [posts, setPosts] = useState([]);
 
   const getPost = async () => {
     try {
@@ -42,7 +42,9 @@ const Admin = () => {
           <div className="post" key={post.id}>
             <h2>{post.title}</h2>
             <div className="actions">
-              <Link className="btn edit-btn">Editar</Link>
+              <Link className="btn edit-btn" to={`/posts/edit/${post.id}`}>
+                Editar
+              </Link>
               <button
                 className="btn delete-btn"
                 onClick={() => deletePost(post.id)}
