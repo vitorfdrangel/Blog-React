@@ -38,3 +38,38 @@
   background-color: #0e1217;
   color: #fff;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  .home {
+    padding: 0 2.8rem;
+  }
+
+  .home h1 {
+    margin-bottom: 1.8rem;
+  }
+
+  .home .loading {
+    text-align: center;
+  }
+
+  .post {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .post h2,
+  .post p {
+    margin-bottom: 1rem;
+  }
+
+  .post a {
+    align-self: center;
+  }
+
+  .btn {
+    max-width: 80px;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}

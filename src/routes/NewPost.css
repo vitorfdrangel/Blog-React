@@ -33,3 +33,23 @@ form {
 .form-control textarea {
   height: 8rem;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  .new-post {
+    padding: 0 2.8rem;
+  }
+
+  .new-post h2 {
+    margin-bottom: 1.4rem;
+  }
+
+  .form-control span {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .new-post form .btn {
+    max-width: 100px;
+  }
+}

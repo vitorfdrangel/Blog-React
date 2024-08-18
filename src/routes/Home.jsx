@@ -30,7 +30,7 @@ const Home = () => {
     <div className="home">
       <h1>Últimos Posts</h1>
       {posts.length === 0 ? (
-        <p>Carregando...</p>
+        <p className="loading">Carregando...</p>
       ) : (
         posts.map((post) => (
           <div className="post" key={post.id}>

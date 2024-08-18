@@ -36,7 +36,7 @@ const Admin = () => {
     <div className="admin">
       <h1>Gerenciar Posts</h1>
       {posts.length === 0 ? (
-        <p>Carregando...</p>
+        <p className="loading">Carregando...</p>
       ) : (
         posts.map((post) => (
           <div className="post" key={post.id}>

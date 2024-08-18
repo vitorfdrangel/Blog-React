@@ -21,3 +21,23 @@
 .delete-btn {
   background-color: #eb1717;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  .admin {
+    padding: 0 2.8rem;
+  }
+
+  .admin .loading {
+    text-align: center;
+  }
+
+  .actions {
+    justify-content: space-evenly;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    font-size: 1rem;
+  }
+}
